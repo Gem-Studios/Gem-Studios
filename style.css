@@ -102,3 +102,12 @@ body {
 body {
     animation: fadeIn 2s ease-in-out;
 }
+/* Slow Rotation Effect */
+@keyframes rotateItem {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.exclusive-item img {
+    animation: rotateItem 20s infinite linear;
+}
