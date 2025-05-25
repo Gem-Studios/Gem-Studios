@@ -19,3 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function purchaseItem() {
     alert("Thank you for purchasing the Alien Ware Jogging Suit for $150!");
 }
+// Purchase Item Function
+function purchaseItem() {
+    alert("Thank you for purchasing the Alien Ware Jogging Suit for $150!");
+}
