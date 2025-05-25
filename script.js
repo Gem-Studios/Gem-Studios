@@ -1,3 +1,7 @@
+// Purchase Item Function
+function purchaseItem() {
+    alert("Thank you for purchasing the Alien Ware Jogging Suit for $150!");
+}
 // Password Protection for Exclusive Page
 function validatePassword() {
     let password = prompt("Enter the exclusive password:");
