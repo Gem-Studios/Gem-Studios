@@ -93,3 +93,12 @@ body {
 .button {
     animation: flicker 1.5s infinite alternate;
 }
+/* Smooth Page Fade-In */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    animation: fadeIn 2s ease-in-out;
+}
