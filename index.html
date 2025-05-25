@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gem Studios</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Rubik+Glitch&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="exclusive.html">Exclusive</a>
+    </div>
+
+    <div class="hero">
         <h1>Welcome to Gem Studios</h1>
-    </header>
-
-    <section id="secret-drop">
-        <h2>Exclusive Fashion Drops</h2>
-        <p>Unlock limited-edition clothing with a secret passcode.</p>
-        <input type="password" id="password-field" placeholder="Enter passcode">
-        <button id="unlock-btn">Unlock</button>
-    </section>
-
-    <section id="exclusive-content" class="hidden">
-        <h2>🔒 Secret Collection Unlocked!</h2>
-        <p>Congratulations
+        <p>Exclusive, futuristic fashion for visionaries.</p>
+        <button class="button" onclick="animateHero()">Explore Now</button>
+    </div>
+</body>
+</html>
