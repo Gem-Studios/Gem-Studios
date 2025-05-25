@@ -1,10 +1,17 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Smooth fade-in effect
-    const secretSection = document.querySelector(".exclusive-section");
-    secretSection.style.opacity = "0";
-    secretSection.style.transition = "opacity 1.5s ease-in-out";
+// Hero Button Animation
+function animateHero() {
+    const heroSection = document.querySelector('.hero');
+    heroSection.style.transform = 'scale(1.05)';
+    setTimeout(() => heroSection.style.transform = 'scale(1)', 400);
+}
 
-    setTimeout(() => {
-        secretSection.style.opacity = "1";
-    }, 500);
+// Hover Effect for Exclusive Items
+document.querySelectorAll('.exclusive-item').forEach(item => {
+    item.addEventListener('mouseover', () => {
+        item.style.transform = 'scale(1.05)';
+    });
+
+    item.addEventListener('mouseleave', () => {
+        item.style.transform = 'scale(1)';
+    });
 });
