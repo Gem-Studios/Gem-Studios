@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 
 /* Global Styles */
 body {
     background: url('background.png') no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
-    font-family: 'VT323', monospace;
+    font-family: 'Orbitron', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -18,7 +18,7 @@ body {
 }
 
 .navbar a {
-    color: #39ff14; /* Neon Green */
+    color: #39ff14;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -30,7 +30,7 @@ body {
     text-shadow: 0px 0px 8px #39ff14;
 }
 
-/* 3D Floating Text */
+/* Floating Text Animation */
 .futuristic-text span {
     display: inline-block;
     animation: floatingText 3s infinite ease-in-out;
@@ -42,15 +42,15 @@ body {
     100% { transform: translateY(0px); opacity: 0.8; }
 }
 
-/* Glowing Text */
+/* Glowing Effect */
 .glow-text {
     font-size: 32px;
     font-weight: bold;
-    color: #39ff14; /* Neon Green */
+    color: #39ff14;
     text-shadow: 0px 0px 20px #39ff14, 0px 0px 40px #ffffff;
 }
 
-/* Button Effects */
+/* Button Hover Effect */
 .button {
     background: #39ff14;
     color: #000;
