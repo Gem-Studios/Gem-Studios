@@ -8,7 +8,7 @@ function validatePassword() {
     }
 }
 
-// Floating Letter Animation for Title
+// Floating Text Animation for Title
 document.addEventListener("DOMContentLoaded", () => {
     const heading = document.querySelector(".futuristic-text");
     heading.innerHTML = heading.textContent.split("").map((letter, index) =>
