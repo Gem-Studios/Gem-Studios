@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const passcode = document.getElementById("password-field").value;
 
         if (passcode === "secret123") {
-            window.location.href = "exclusive.html"; // Redirect to the new page
+            window.location.href = "exclusive.html"; // Redirects to secret fashion page
         } else {
-            alert("Incorrect passcode. Try again.");
+            alert("Incorrect passcode. Try again."); // Error message
         }
     });
 });
