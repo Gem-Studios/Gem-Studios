@@ -15,3 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `<span style="--delay: ${index}">${letter}</span>`
     ).join("");
 });
+// Purchase Item Function
+function purchaseItem() {
+    alert("Thank you for purchasing the Alien Ware Jogging Suit for $150!");
+}
