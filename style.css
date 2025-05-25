@@ -69,3 +69,17 @@ body {
     transform: scale(1.1);
     box-shadow: 0px 0px 30px #39ff14;
 }
+/* Floating Animation */
+@keyframes floatEffect {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.futuristic-text {
+    animation: floatEffect 3s infinite ease-in-out;
+}
+
+.glow-text {
+    animation: floatEffect 4s infinite ease-in-out;
+}
