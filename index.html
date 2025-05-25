@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gem Studios</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Rubik+Glitch&display=swap" rel="stylesheet">
 </head>
@@ -17,15 +18,9 @@
         <h2>Exclusive Fashion Drops</h2>
         <p>Unlock limited-edition clothing with a secret passcode.</p>
         <input type="password" id="password-field" placeholder="Enter passcode">
-        <button onclick="checkAccess()">Unlock</button>
+        <button id="unlock-btn">Unlock</button>
     </section>
 
-    <section id="exclusive-content" style="display: none;">
+    <section id="exclusive-content" class="hidden">
         <h2>🔒 Secret Collection Unlocked!</h2>
-        <p>Congratulations! You have accessed the exclusive fashion drops.</p>
-        <img src="assets/hidden-design.jpg" alt="Exclusive Fashion">
-    </section>
-
-    <script src="script.js"></script>
-</body>
-</html>
+        <p>Congratulations
