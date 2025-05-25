@@ -1,27 +1,7 @@
-body {
-    background-color: #121212;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 36px;
-    color: #ff4081;
-}
-
-#secret-drop {
+#exclusive-content {
     margin-top: 50px;
-}
-
-input {
-    padding: 10px;
-    font-size: 16px;
-}
-button {
-    padding: 10px;
-    background-color: #ff4081;
-    color: white;
-    border: none;
-    cursor: pointer;
+    padding: 20px;
+    background-color: #222;
+    color: #ff4081;
+    border-radius: 10px;
 }
