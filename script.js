@@ -1,7 +1,3 @@
-// Purchase Item Function
-function purchaseItem() {
-    alert("Thank you for purchasing the Alien Ware Jogging Suit for $150!");
-}
 // Password Protection for Exclusive Page
 function validatePassword() {
     let password = prompt("Enter the exclusive password:");
@@ -15,15 +11,22 @@ function validatePassword() {
 // Floating Text Animation for Title
 document.addEventListener("DOMContentLoaded", () => {
     const heading = document.querySelector(".futuristic-text");
-    heading.innerHTML = heading.textContent.split("").map((letter, index) =>
-        `<span style="--delay: ${index}">${letter}</span>`
-    ).join("");
+    if (heading) {
+        heading.innerHTML = heading.textContent.split("").map((letter, index) =>
+            `<span style="animation-delay: ${index * 0.1}s">${letter}</span>`
+        ).join("");
+    }
 });
+
 // Purchase Item Function
 function purchaseItem() {
     alert("Thank you for purchasing the Alien Ware Jogging Suit for $150!");
 }
-// Purchase Item Function
-function purchaseItem() {
-    alert("Thank you for purchasing the Alien Ware Jogging Suit for $150!");
-}
+
+// Alien Glow Effect Activation
+document.addEventListener("DOMContentLoaded", () => {
+    const glowingImage = document.querySelector(".alien-glow");
+    if (glowingImage) {
+        glowingImage.style.animation = "alienGlow 5s infinite alternate ease-in-out";
+    }
+});
