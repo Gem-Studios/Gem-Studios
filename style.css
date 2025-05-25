@@ -1,122 +1,23 @@
-/* Ruby Gem Mouse Cursor */
-body {
-    cursor: url('assets/ruby_cursor.png'), auto;
-}
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Gem Studios Exclusive Collection</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="site-title">GEM STUDIOS</h1>
+        <a href="index.html">Home</a>
+        <a href="exclusive.html">Exclusive</a>
+    </div>
 
-/* Global Styles */
-body {
-    background: url('background.png') no-repeat center center fixed;
-    background-size: cover;
-    color: #ffffff;
-    font-family: 'Orbitron', sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-/* Navbar */
-.navbar {
-    background-color: rgba(10, 10, 10, 0.8);
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Site Title */
-.site-title {
-    font-size: 36px;
-    font-weight: bold;
-    color: #39ff14;
-    text-shadow: 0px 0px 20px #39ff14, 0px 0px 40px #ffffff;
-}
-
-/* Floating Text Animation */
-.futuristic-text span {
-    display: inline-block;
-    animation: floatingText 3s infinite ease-in-out;
-}
-
-@keyframes floatingText {
-    0% { transform: translateY(0px); opacity: 0.8; }
-    50% { transform: translateY(-10px); opacity: 1; }
-    100% { transform: translateY(0px); opacity: 0.8; }
-}
-
-/* Glowing Effect */
-.glow-text {
-    font-size: 32px;
-    font-weight: bold;
-    color: #39ff14;
-    text-shadow: 0px 0px 20px #39ff14, 0px 0px 40px #ffffff;
-}
-
-/* Button Hover Effect */
-.button {
-    background: #39ff14;
-    color: #000;
-    padding: 15px 30px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    box-shadow: 0px 0px 15px #39ff14;
-    transition: transform 0.3s ease;
-}
-
-.button:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 30px #39ff14;
-}
-/* Floating Animation */
-@keyframes floatEffect {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
-}
-
-.futuristic-text {
-    animation: floatEffect 3s infinite ease-in-out;
-}
-
-.glow-text {
-    animation: floatEffect 4s infinite ease-in-out;
-}
-/* Flickering Button Glow */
-@keyframes flicker {
-    0% { box-shadow: 0px 0px 10px #39ff14; }
-    50% { box-shadow: 0px 0px 30px #ffffff; }
-    100% { box-shadow: 0px 0px 10px #39ff14; }
-}
-
-.button {
-    animation: flicker 1.5s infinite alternate;
-}
-/* Smooth Page Fade-In */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-body {
-    animation: fadeIn 2s ease-in-out;
-}
-/* Slow Rotation Effect */
-@keyframes rotateItem {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.exclusive-item img {
-    animation: rotateItem 20s infinite linear;
-}
-/* Scrolling Background */
-@keyframes backgroundScroll {
-    0% { background-position: top left; }
-    100% { background-position: bottom right; }
-}
-
-body {
-    animation: backgroundScroll 30s infinite linear;
-}
+    <div class="exclusive-container">
+        <div class="exclusive-item">
+            <img src="images/alien_jogging_suit.png" alt="Alien Ware Jogging Suit">
+            <h2 class="glow-text">Alien Ware Jogging Suit</h2>
+            <button class="button">Shop Now</button>
+        </div>
+    </div>
+</body>
+</html>
