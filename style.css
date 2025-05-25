@@ -1,58 +1,66 @@
-/* Futuristic background */
+/* General Styles */
 body {
-    font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(90deg, #121212, #292929);
-    color: white;
+    background-color: #0e0e0e;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-/* Glitch effect for header */
-@keyframes glitch {
-    0% { text-shadow: 3px 3px 5px rgba(255, 64, 129, 0.6); }
-    25% { text-shadow: -3px -3px 5px rgba(255, 64, 129, 0.6); }
-    50% { text-shadow: 3px -3px 5px rgba(255, 64, 129, 0.6); }
-    75% { text-shadow: -3px 3px 5px rgba(255, 64, 129, 0.6); }
-    100% { text-shadow: 3px 3px 5px rgba(255, 64, 129, 0.6); }
+/* Navbar */
+.navbar {
+    background-color: #1a1a1a;
+    padding: 15px;
 }
 
-header h1 {
-    font-family: 'Rubik Glitch', sans-serif;
-    font-size: 50px;
-    color: #ff4081;
-    animation: glitch 1s infinite alternate;
-}
-
-/* Spinning 3D text */
-@keyframes spin {
-    0% { transform: rotateY(0deg); }
-    100% { transform: rotateY(360deg); }
-}
-
-.spinning-text {
-    font-size: 40px;
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
     font-weight: bold;
-    color: cyan;
-    text-shadow: 0px 0px 10px cyan;
-    animation: spin 3s infinite linear;
 }
 
-/* Glow effect on buttons */
-button {
-    font-family: 'Orbitron', sans-serif;
-    padding: 12px;
-    background: #ff4081;
-    color: white;
-    border: none;
+/* Hero Section */
+.hero {
+    padding: 100px;
+    background: linear-gradient(to right, #0e0e0e, #1a1a1a);
+}
+
+/* Exclusive Page */
+.exclusive-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.exclusive-item {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.exclusive-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Button Styling */
+.button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-button:hover {
-    box-shadow: 0px 0px 15px rgba(255, 64, 129, 0.8);
+.button:hover {
     transform: scale(1.1);
-}
-
-/* Hide exclusive section on main page */
-.hidden {
-    display: none;
 }
