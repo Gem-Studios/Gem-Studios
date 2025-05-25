@@ -1,11 +1,12 @@
 function checkAccess() {
-    const passcode = document.querySelector("input").value; // Get the user-entered passcode
-    const secretSection = document.getElementById("exclusive-content"); // Get the secret section
+    const passcode = document.querySelector("#password-field").value;
+    const secretSection = document.getElementById("exclusive-content");
+    const inputSection = document.getElementById("secret-drop");
 
     if (passcode === "secret123") {
-        secretSection.style.display = "block"; // Show the secret section
-        document.getElementById("secret-drop").style.display = "none"; // Hide the input section
+        secretSection.style.display = "block";  // Show the secret section
+        inputSection.style.display = "none";  // Hide the passcode entry section
     } else {
-        alert("Incorrect passcode. Try again."); // Show error message
+        alert("Incorrect passcode. Try again.");
     }
 }
