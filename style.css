@@ -1,57 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+/* Global Styles */
 body {
-    background-color: #0e0e0e;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
+/* Navbar */
 .navbar {
-    background-color: #1a1a1a;
+    background-color: rgba(10, 10, 10, 0.8);
     padding: 15px;
 }
 
 .navbar a {
-    color: #ffffff;
+    color: #39ff14; /* Neon Green */
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
-.exclusive-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px;
+.navbar a:hover {
+    color: #ffffff;
+    text-shadow: 0px 0px 8px #39ff14;
 }
 
-.exclusive-item {
-    background: linear-gradient(to right, #101010, #282828);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 0px 10px #39ff14; /* Neon Alien Glow */
+/* 3D Floating Text */
+.futuristic-text span {
+    display: inline-block;
+    animation: floatingText 3s infinite ease-in-out;
 }
 
-.exclusive-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+@keyframes floatingText {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
 }
 
+/* Glowing Text */
+.glow-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: #39ff14; /* Neon Green */
+    text-shadow: 0px 0px 20px #39ff14, 0px 0px 40px #ffffff;
+}
+
+/* Button Effects */
 .button {
     background: #39ff14;
     color: #000;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 15px 30px;
+    border-radius: 8px;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+    box-shadow: 0px 0px 15px #39ff14;
     transition: transform 0.3s ease;
 }
 
 .button:hover {
     transform: scale(1.1);
+    box-shadow: 0px 0px 30px #39ff14;
 }
