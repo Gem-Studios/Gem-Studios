@@ -18,14 +18,14 @@ body {
 }
 
 /* Alien Glow Effect (replaces rotation) */
-@keyframes alienEffect {
+@keyframes alienGlow {
     0% { filter: brightness(100%) hue-rotate(0deg); }
     50% { filter: brightness(150%) hue-rotate(180deg); }
     100% { filter: brightness(100%) hue-rotate(360deg); }
 }
 
-.alien-effect {
-    animation: alienEffect 5s infinite alternate ease-in-out;
+.alien-glow {
+    animation: alienGlow 5s infinite alternate ease-in-out;
 }
 
 /* Shop Page Styling */
