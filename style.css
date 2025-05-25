@@ -18,3 +18,8 @@ header h1 {
     color: #ff4081;
     border-radius: 10px;
 }
+h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
