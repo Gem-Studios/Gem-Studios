@@ -111,3 +111,12 @@ body {
 .exclusive-item img {
     animation: rotateItem 20s infinite linear;
 }
+/* Scrolling Background */
+@keyframes backgroundScroll {
+    0% { background-position: top left; }
+    100% { background-position: bottom right; }
+}
+
+body {
+    animation: backgroundScroll 30s infinite linear;
+}
