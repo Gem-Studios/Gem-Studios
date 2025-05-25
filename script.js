@@ -1,21 +1,11 @@
-// Password Protection for Exclusive Page
-function validatePassword() {
-    let password = prompt("Enter the exclusive password:");
-    if (password === "gems") {
-        window.location.href = "exclusive.html";
-    } else {
-        alert("Incorrect password. Try again.");
-    }
-}
-
-// Redirect to Shop Page
+// Redirect to Shop Page from Exclusive Page
 function goToShop() {
     window.location.href = "shop.html";
 }
 
-// Apply Shop Button Fix on Exclusive Page
+// Ensure "Shop Now" Button Works on Exclusive Page
 document.addEventListener("DOMContentLoaded", () => {
-    const shopButton = document.querySelector(".button");
+    const shopButton = document.querySelector(".shop-button");
     if (shopButton) {
         shopButton.addEventListener("click", goToShop);
     }
@@ -24,6 +14,16 @@ document.addEventListener("DOMContentLoaded", () => {
 // Purchase Item Function
 function purchaseItem() {
     alert("Thank you for purchasing the Alien Ware Jogging Suit for $150!");
+}
+
+// Password Protection for Exclusive Page
+function validatePassword() {
+    let password = prompt("Enter the exclusive password:");
+    if (password === "gems") {
+        window.location.href = "exclusive.html";
+    } else {
+        alert("Incorrect password. Try again.");
+    }
 }
 
 // Floating Text Animation for Title
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// Alien Glow Effect Activation
+// Alien Glow Effect Activation for Clothing Image
 document.addEventListener("DOMContentLoaded", () => {
     const glowingImage = document.querySelector(".alien-glow");
     if (glowingImage) {
