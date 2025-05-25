@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     background-color: #0e0e0e;
     color: #ffffff;
@@ -8,7 +7,6 @@ body {
     text-align: center;
 }
 
-/* Navbar */
 .navbar {
     background-color: #1a1a1a;
     padding: 15px;
@@ -21,13 +19,6 @@ body {
     font-weight: bold;
 }
 
-/* Hero Section */
-.hero {
-    padding: 100px;
-    background: linear-gradient(to right, #0e0e0e, #1a1a1a);
-}
-
-/* Exclusive Page */
 .exclusive-container {
     display: flex;
     flex-wrap: wrap;
@@ -37,10 +28,11 @@ body {
 }
 
 .exclusive-item {
-    background-color: #1f1f1f;
+    background: linear-gradient(to right, #101010, #282828);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0px 0px 10px #39ff14; /* Neon Alien Glow */
 }
 
 .exclusive-item img {
@@ -49,10 +41,9 @@ body {
     border-radius: 8px;
 }
 
-/* Button Styling */
 .button {
-    background-color: #ffffff;
-    color: #000000;
+    background: #39ff14;
+    color: #000;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
