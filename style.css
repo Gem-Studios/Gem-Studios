@@ -6,7 +6,7 @@ body {
     text-align: center;
 }
 
-/* Style header with glitch effect */
+/* Glitch effect for header */
 header h1 {
     font-family: 'Rubik Glitch', sans-serif;
     font-size: 50px;
@@ -14,14 +14,13 @@ header h1 {
     text-shadow: 3px 3px 5px rgba(255, 64, 129, 0.6);
 }
 
-/* Secret section title */
+/* Secret section */
 h2 {
     font-size: 40px;
     text-transform: uppercase;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }
 
-/* Style input box */
+/* Input box */
 input {
     padding: 10px;
     font-size: 16px;
@@ -45,12 +44,7 @@ button:hover {
     transform: scale(1.1);
 }
 
-/* Exclusive section */
-#exclusive-content {
-    margin-top: 50px;
-    padding: 20px;
-    background-color: #222;
-    color: #ff4081;
-    border-radius: 10px;
+/* Exclusive content (hidden by default) */
+.hidden {
     display: none;
 }
