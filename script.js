@@ -1,9 +1,35 @@
-// Redirect to Shop Page from Exclusive Page
+// Password Protection for Homepage
+document.addEventListener("DOMContentLoaded", () => {
+    let password = prompt("Enter the exclusive password to access Gem Studios:");
+    if (password !== "gems") {
+        alert("Incorrect password. Try again.");
+        window.location.reload();
+    }
+});
+
+// Create Floating Ruby Gems
+document.addEventListener("DOMContentLoaded", () => {
+    const body = document.querySelector("body");
+
+    for (let i = 15; i > 0; i--) {
+        let gem = document.createElement("img");
+        gem.src = "assets/ruby_gem.png"; 
+        gem.classList.add("floating-gem");
+
+        gem.style.left = `${Math.random() * 100}vw`;
+        gem.style.top = `${Math.random() * 100}vh`;
+        gem.style.animationDuration = `${2 + Math.random() * 4}s`;
+        
+        body.appendChild(gem);
+    }
+});
+
+// Redirect to Shop Page
 function goToShop() {
     window.location.href = "shop.html";
 }
 
-// Ensure "Shop Now" Button Works on Exclusive Page
+// Ensure "Shop Now" Button Works
 document.addEventListener("DOMContentLoaded", () => {
     const shopButton = document.querySelector(".shop-button");
     if (shopButton) {
@@ -15,31 +41,3 @@ document.addEventListener("DOMContentLoaded", () => {
 function purchaseItem() {
     alert("Thank you for purchasing the Alien Ware Jogging Suit for $150!");
 }
-
-// Password Protection for Exclusive Page
-function validatePassword() {
-    let password = prompt("Enter the exclusive password:");
-    if (password === "gems") {
-        window.location.href = "exclusive.html";
-    } else {
-        alert("Incorrect password. Try again.");
-    }
-}
-
-// Floating Text Animation for Title
-document.addEventListener("DOMContentLoaded", () => {
-    const heading = document.querySelector(".futuristic-text");
-    if (heading) {
-        heading.innerHTML = heading.textContent.split("").map((letter, index) =>
-            `<span style="animation-delay: ${index * 0.1}s">${letter}</span>`
-        ).join("");
-    }
-});
-
-// Alien Glow Effect Activation for Clothing Image
-document.addEventListener("DOMContentLoaded", () => {
-    const glowingImage = document.querySelector(".alien-glow");
-    if (glowingImage) {
-        glowingImage.style.animation = "alienGlow 5s infinite alternate ease-in-out";
-    }
-});
