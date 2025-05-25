@@ -1,23 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <title>Gem Studios Exclusive Collection</title>
-</head>
-<body>
-    <div class="navbar">
-        <h1 class="site-title">GEM STUDIOS</h1>
-        <a href="index.html">Home</a>
-        <a href="exclusive.html">Exclusive</a>
-    </div>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 
-    <div class="exclusive-container">
-        <div class="exclusive-item">
-            <img src="images/alien_jogging_suit.png" alt="Alien Ware Jogging Suit">
-            <h2 class="glow-text">Alien Ware Jogging Suit</h2>
-            <button class="button">Shop Now</button>
-        </div>
-    </div>
-</body>
-</html>
+/* Ruby Gem Mouse Cursor */
+body {
+    cursor: url('assets/ruby_cursor.png'), auto;
+}
+
+/* Global Styles */
+body {
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Floating Animation */
+@keyframes floatEffect {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.futuristic-text {
+    animation: floatEffect 3s infinite ease-in-out;
+}
+
+.glow-text {
+    animation: floatEffect 4s infinite ease-in-out;
+}
+
+/* Flickering Button Glow */
+@keyframes flicker {
+    0% { box-shadow: 0px 0px 10px #39ff14; }
+    50% { box-shadow: 0px 0px 30px #ffffff; }
+    100% { box-shadow: 0px 0px 10px #39ff14; }
+}
+
+.button {
+    animation: flicker 1.5s infinite alternate;
+}
+
+/* Smooth Page Fade-In */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Slow Rotation Effect */
+@keyframes rotateItem {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.rotate-item {
+    animation: rotateItem 20s infinite linear;
+}
+
+/* Scrolling Background */
+@keyframes backgroundScroll {
+    0% { background-position: top left; }
+    100% { background-position: bottom right; }
+}
+
+body {
+    animation: backgroundScroll 30s infinite linear;
+}
