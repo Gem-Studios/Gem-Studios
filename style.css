@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+/* Ruby Gem Mouse Cursor */
+body {
+    cursor: url('assets/ruby_cursor.png'), auto;
+}
+
+/* Global Styles */
+body {
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Alien Glow Effect (replaces rotation) */
+@keyframes alienEffect {
+    0% { filter: brightness(100%) hue-rotate(0deg); }
+    50% { filter: brightness(150%) hue-rotate(180deg); }
+    100% { filter: brightness(100%) hue-rotate(360deg); }
+}
+
+.alien-effect {
+    animation: alienEffect 5s infinite alternate ease-in-out;
+}
+
 /* Shop Page Styling */
 .shop-container {
     display: flex;
@@ -11,17 +41,6 @@
     background: rgba(10, 10, 10, 0.8);
     padding: 20px;
     border-radius: 15px;
-}
-
-/* Alien Glow Effect */
-@keyframes alienGlow {
-    0% { filter: brightness(100%) hue-rotate(0deg); }
-    50% { filter: brightness(150%) hue-rotate(180deg); }
-    100% { filter: brightness(100%) hue-rotate(360deg); }
-}
-
-.alien-glow {
-    animation: alienGlow 5s infinite alternate ease-in-out;
 }
 
 /* Price Styling */
