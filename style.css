@@ -17,7 +17,21 @@ body {
     animation: fadeIn 2s ease-in-out;
 }
 
-/* Alien Glow Effect (replaces rotation) */
+/* Floating Ruby Gems */
+@keyframes floatGems {
+    0% { transform: translateY(0px); opacity: 1; }
+    50% { transform: translateY(-50px); opacity: 0.7; }
+    100% { transform: translateY(0px); opacity: 1; }
+}
+
+.floating-gem {
+    position: absolute;
+    width: 40px;
+    opacity: 0.8;
+    animation: floatGems infinite ease-in-out;
+}
+
+/* Alien Glow Effect */
 @keyframes alienGlow {
     0% { filter: brightness(100%) hue-rotate(0deg); }
     50% { filter: brightness(150%) hue-rotate(180deg); }
