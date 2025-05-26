@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gem Studios</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <title>Gem Studios - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="navbar">
-        <h1 class="site-title">GEM STUDIOS</h1>
-        <a href="index.html">Home</a>
-        <a href="#" onclick="validatePassword()">Exclusive</a>
-        <a href="shop.html">Shop</a>
-    </div>
+    <div class="container">
+        <h1>Welcome to Gem Studios</h1>
+        <p>Enter the exclusive futuristic experience</p>
 
-    <div class="hero">
-        <h1 class="futuristic-text">WELCOME TO <span>GEM STUDIOS</span></h1>
-        <p>Exclusive fashion for visionaries.</p>
-        <button class="button" onclick="validatePassword()">Enter Exclusive</button>
+        <!-- Password Protected Entry -->
+        <input type="password" id="password" placeholder="Enter Access Code">
+        <button onclick="checkPassword()">Enter</button>
+
+        <!-- Navigation Buttons -->
+        <button onclick="goBack()">⬅ Back</button>
+        <button onclick="goNext()">Next ➡</button>
     </div>
 </body>
 </html>
