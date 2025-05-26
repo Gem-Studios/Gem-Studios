@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Gem Studios</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Checkout</h1>
+        <p>Enter your details to complete the purchase.</p>
+
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" placeholder="Enter card number">
+
+        <label for="billingAddress">Billing Address:</label>
+        <input type="text" id="billingAddress" placeholder="Enter billing address">
+
+        <label for="shippingAddress">Shipping Address:</label>
+        <input type="text" id="shippingAddress" placeholder="Enter shipping address">
+
+        <button onclick="processCheckout()">Confirm Purchase</button>
+
+        <!-- Navigation Buttons -->
+        <button onclick="goBack()">⬅ Back</button>
+    </div>
+</body>
+</html>
