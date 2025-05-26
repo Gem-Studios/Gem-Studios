@@ -1,65 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-
-/* Ruby Gem Mouse Cursor */
 body {
-    cursor: url('assets/ruby_cursor.png'), auto;
-}
-
-/* Global Styles */
-body {
-    background: url('background.png') no-repeat center center fixed;
-    background-size: cover;
-    color: #ffffff;
+    background-color: #001f3f;
+    color: white;
     font-family: 'Orbitron', sans-serif;
-    margin: 0;
-    padding: 0;
     text-align: center;
-    animation: fadeIn 2s ease-in-out;
 }
 
-/* Floating Ruby Gems */
-@keyframes floatGems {
-    0% { transform: translateY(0px); opacity: 1; }
-    50% { transform: translateY(-50px); opacity: 0.7; }
-    100% { transform: translateY(0px); opacity: 1; }
+.container {
+    margin-top: 20%;
 }
 
-.floating-gem {
-    position: absolute;
-    width: 40px;
-    opacity: 0.8;
-    animation: floatGems infinite ease-in-out;
+button {
+    background-color: #0074D9;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
 
-/* Alien Glow Effect */
-@keyframes alienGlow {
-    0% { filter: brightness(100%) hue-rotate(0deg); }
-    50% { filter: brightness(150%) hue-rotate(180deg); }
-    100% { filter: brightness(100%) hue-rotate(360deg); }
-}
-
-.alien-glow {
-    animation: alienGlow 5s infinite alternate ease-in-out;
-}
-
-/* Shop Page Styling */
-.shop-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.shop-item {
-    text-align: center;
-    background: rgba(10, 10, 10, 0.8);
-    padding: 20px;
-    border-radius: 15px;
-}
-
-/* Price Styling */
-.price {
-    font-size: 24px;
-    font-weight: bold;
-    color: #39ff14;
+button:hover {
+    background-color: #005BB5;
 }
