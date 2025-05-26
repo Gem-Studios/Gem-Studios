@@ -35,3 +35,14 @@ function processCheckout() {
         alert("Please fill in all required details!");
     }
 }
+function rotateImage() {
+    let productImage = document.getElementById("productImage");
+
+    if (productImage.src.includes("front")) {
+        productImage.src = "assets/jumpsuit-blue-side.png";
+    } else if (productImage.src.includes("side")) {
+        productImage.src = "assets/jumpsuit-blue-back.png";
+    } else {
+        productImage.src = "assets/jumpsuit-blue-front.png";
+    }
+}
