@@ -1,3 +1,21 @@
+body {
+    background: radial-gradient(circle, #001f3f, #003366);
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+}
+
+.futuristic-font {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.futuristic-glow {
+    color: cyan;
+    text-shadow: 0 0 15px cyan;
+}
+
 .background-img {
     width: 100%;
     height: auto;
