@@ -1,32 +1,28 @@
-// Password Protection for Homepage
 function checkPassword() {
     let input = document.getElementById('password').value;
-    let correctPassword = "futuristic123"; // Change this to your actual password
+    let correctPassword = "futuristic123";
 
     if (input === correctPassword) {
         alert("Access Granted!");
-        window.location.href = "exclusive.html"; // Redirect to Exclusive Page
+        window.location.href = "exclusive.html";
     } else {
         alert("Access Denied!");
     }
 }
 
-// Navigation Functions
 function goBack() {
     history.back();
 }
 
 function goNext() {
-    window.location.href = "shop.html"; // Redirects to Shop Page
+    window.location.href = "shop.html";
 }
 
-// Buy Product Function
 function buyProduct(price) {
     alert("Product added to cart! Price: $" + price);
-    window.location.href = "checkout.html"; // Redirects to Checkout
+    window.location.href = "checkout.html";
 }
 
-// Checkout Process
 function processCheckout() {
     let cardNumber = document.getElementById("cardNumber").value;
     let billingAddress = document.getElementById("billingAddress").value;
@@ -34,7 +30,7 @@ function processCheckout() {
 
     if (cardNumber && billingAddress && shippingAddress) {
         alert("Purchase Successful! Your order is on the way.");
-        window.location.href = "confirmation.html"; // Redirect to Confirmation Page
+        window.location.href = "confirmation.html";
     } else {
         alert("Please fill in all required details!");
     }
