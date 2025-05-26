@@ -1,10 +1,10 @@
 function checkPassword() {
     let input = document.getElementById('password').value;
-    let correctPassword = "futuristic123";
+    let correctPassword = "gems";
 
     if (input === correctPassword) {
         alert("Access Granted!");
-        window.location.href = "exclusive.html";
+        window.location.href = "shop.html";
     } else {
         alert("Access Denied!");
     }
