@@ -10,10 +10,6 @@ function checkPassword() {
     }
 }
 
-function goBack() {
-    history.back();
-}
-
 function goNext() {
     window.location.href = "shop.html";
 }
@@ -23,18 +19,6 @@ function buyProduct(price) {
     window.location.href = "checkout.html";
 }
 
-function processCheckout() {
-    let cardNumber = document.getElementById("cardNumber").value;
-    let billingAddress = document.getElementById("billingAddress").value;
-    let shippingAddress = document.getElementById("shippingAddress").value;
-
-    if (cardNumber && billingAddress && shippingAddress) {
-        alert("Purchase Successful! Your order is on the way.");
-        window.location.href = "confirmation.html";
-    } else {
-        alert("Please fill in all required details!");
-    }
-}
 function rotateImage() {
     let productImage = document.getElementById("productImage");
 
